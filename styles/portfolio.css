@@ -1,10 +1,37 @@
-h1 {
-  font-family: "Pacifico", cursive;
+:root {
+  --primary-font-family: "Pacifico", cursive;
+  --secondary-font-family: "Work Sans", sans-serif;
+  --secondary-color: #f7f7f7;
 }
 
-p {
-  font-family: "Work Sans", sans-serif;
+body {
+  font-family: var(--secondary-font-family);
 }
 
-/* font-family: 'Pacifico', cursive;
-font-family: 'Work Sans', sans-serif; */
+.hero {
+  display: block;
+  text-align: center;
+  background: var(--secondary-color);
+  padding: 100px 15px;
+}
+
+.hero h1 {
+  font-family: var(--primary-font-family);
+  font-size: 80px;
+}
+
+.hero h2 {
+  font-size: 25px;
+  margin: 0;
+}
+
+.btn-warning {
+  color: #fff;
+  border-radius: 4px;
+  padding: 15px 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.btn-warning:hover {
+  color: #fff;
+}
