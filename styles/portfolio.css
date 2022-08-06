@@ -27,6 +27,7 @@ body {
 
 .btn-warning {
   color: #fff;
+  font-size: 15px;
   border-radius: 4px;
   padding: 15px 25px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
@@ -34,4 +35,30 @@ body {
 
 .btn-warning:hover {
   color: #fff;
+}
+
+.container h2 {
+  font-family: var(--primary-font-family);
+}
+
+.container p {
+  font-size: 15px;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    padding: 70px 15px;
+  }
+
+  .hero h1 {
+    font-size: 50px;
+  }
+
+  .hero h2 {
+    font-size: 20px;
+  }
+
+  .container p {
+    padding: 0 10px;
+  }
 }
