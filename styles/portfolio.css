@@ -1,35 +1,44 @@
 :root {
   --primary-font-family: "Pacifico", cursive;
   --secondary-font-family: "Work Sans", sans-serif;
-  --secondary-color: #f7f7f7;
+  --secondary-color: #2f2e41;
 }
 
 body {
   font-family: var(--secondary-font-family);
+  background: #ffca2c;
 }
 
 .hero {
   display: block;
   text-align: center;
-  background: var(--secondary-color);
+  background: #fff;
   padding: 100px 15px;
 }
 
-.hero h1 {
+.hero .container h1 {
   font-family: var(--primary-font-family);
   font-size: 80px;
+  color: var(--secondary-color);
 }
 
-.hero h2 {
+.hero .container h2 {
+  font-family: var(--secondary-font-family);
   font-size: 25px;
+  color: var(--secondary-color);
   margin: 0;
+}
+
+.hero .container .woman {
+  max-width: 270px;
+  margin: 0 auto;
 }
 
 .btn-warning {
   color: #fff;
   font-size: 15px;
-  border-radius: 4px;
   padding: 15px 25px;
+  border-radius: 4px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 
@@ -37,25 +46,52 @@ body {
   color: #fff;
 }
 
+.projects {
+  font-weight: bold;
+  background: #fff;
+  padding: 10px;
+  border: 4px solid #000;
+  border-right-width: 20px;
+  border-left-width: 20px;
+}
+
 .container h2 {
   font-family: var(--primary-font-family);
+  color: var(--secondary-color);
 }
 
 .container p {
   font-size: 15px;
+  color: var(--secondary-color);
 }
 
-@media (max-width: 900px) {
+.btn-dark {
+  color: #fff;
+  font-size: 15px;
+  padding: 15px 25px;
+  border-radius: 4px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.btn-light:hover {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
   .hero {
     padding: 70px 15px;
   }
 
-  .hero h1 {
+  .hero .container h1 {
     font-size: 50px;
   }
 
-  .hero h2 {
+  .hero .container h2 {
     font-size: 20px;
+  }
+
+  .hero .container .woman {
+    margin-top: 30px;
   }
 
   .container p {
