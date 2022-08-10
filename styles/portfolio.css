@@ -77,6 +77,25 @@ body {
   color: #fff;
 }
 
+.about-section {
+  padding: 100px 15px;
+}
+
+.about-section h1 {
+  font-family: var(--primary-font-family);
+  font-size: 50px;
+}
+
+.about-section h2 {
+  font-family: var(--secondary-font-family);
+  font-size: 20px;
+}
+
+.about-section .about-img {
+  max-width: 270px;
+  border-radius: 50%;
+}
+
 @media (max-width: 767px) {
   .hero {
     padding: 70px 15px;
@@ -96,5 +115,13 @@ body {
 
   .container p {
     padding: 0 10px;
+  }
+
+  .about-section {
+    text-align: center;
+  }
+
+  .about-section .about-img {
+    margin-top: 30px;
   }
 }
