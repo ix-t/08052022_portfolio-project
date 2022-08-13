@@ -51,7 +51,11 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" title="home page" aria-current="page" href="/"
+              <a
+                class="nav-link active"
+                title="home page"
+                aria-current="page"
+                href="/"
                 >Home</a
               >
             </li>
@@ -73,45 +77,73 @@
       </div>
     </nav>
     <div class="hero">
-      <div class="hero-container container">
-        <div class="row">
-          <div class="col-md-7 col-sm-12">
-            <h2>Hello, I am</h2>
-            <h1>Ixchel Tiro</h1>
-            <h2 class="mb-4">
-              TMS Consultant and Coding Student based in Mexico
-            </h2>
-            <div>
-              <a href="#" class="btn btn-warning">Read more ↓</a>
-            </div>
-          </div>
-          <div class="col-md-5 col-sm-12">
-            <img
-              src="images/woman.png"
-              class="woman img-fluid d-none d-sm-block"
-              alt=""
-            />
-          </div>
+      <div class="hero-desktop d-none d-md-block">
+        <img src="images/hp-img.png" class="img-fluid" alt="" />
+      </div>
+      <div class="hero-mobile d-block d-md-none">
+        <h2>Hello, I am</h2>
+        <h1>Ixchel Tiro</h1>
+        <h2 class="mb-4">TMS Consultant and Coding Student based in Mexico</h2>
+        <div>
+          <a href="/#about" class="btn btn-danger">Read more ↓</a>
         </div>
       </div>
     </div>
-
     <div class="about" id="about">
-      <div class="about-container container">
+      <div class="about-container container p-0">
         <div class="row">
-          <div class="col-md-5 col-sm-12">
+          <div class="col-md-5 col-sm-12 text-center p-0 m-auto">
             <img src="images/ixchel.png" class="about-img img-fluid" alt="" />
           </div>
           <div class="col-md-7 col-sm-12">
-            <h1>Hi, I am Ixchel Tiro</h1>
-            <h2>TMS Consultant and Coding Student based in Mexico</h2>
+            <h1>About me</h1>
+            <h2>💮 Hi there! My name is Ixchel</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis quia, dignissimos nam ratione veniam quibusdam porro
-              omnis quam vel eos eveniet alias temporibus deserunt veritatis
-              minima fugiat explicabo eum dolore.
+              I am currently working as a Transportation Management System
+              Consultant. A few months ago I became interested in developing
+              more technical skills and that is why I am taking the SheCodes
+              Workshops.
+              <br />
+              <br />
+              It has been a great journey to learn and deepen my knowlegde due
+              to the projects I have been working on with the following tools:
             </p>
-            <a href="" class="btn btn-dark">See my projects</a>
+            <div class="row text-center">
+              <div class="col col-sm-3">
+                <i class="icon fa-brands fa-html5"></i>
+              </div>
+              <div class="col col-sm-3">
+                <i class="icon fa-brands fa-css3-alt"></i>
+              </div>
+              <div class="col col-sm-3">
+                <i class="icon fa-brands fa-square-js"></i>
+              </div>
+              <div class="col col-sm-3">
+                <i class="icon fa-brands fa-git-alt"></i>
+              </div>
+            </div>
+            <div class="row text-center">
+              <div class="col col-sm-3">
+                <i class="icon fa-brands fa-github"></i>
+              </div>
+              <div class="col col-sm-3">
+                <i class="icon fa-brands fa-bootstrap"></i>
+              </div>
+              <div class="col col-sm-3">
+                <i class="icon fa-brands fa-google"></i>
+              </div>
+              <div class="col col-sm-3">
+                <i class="icon fa-solid fa-tablet-screen-button"></i>
+              </div>
+            </div>
+            <p>
+              <br />
+              This page has been created with the intention of showing my latest
+              projects. Please, feel free to take a look at them.
+            </p>
+            <div class="mt-3">
+              <a href="/work.html" class="btn btn-dark">See my projects</a>
+            </div>
           </div>
         </div>
       </div>

@@ -6,7 +6,17 @@
 
 body {
   font-family: var(--secondary-font-family);
-  background: #ffca2c;
+  background: linear-gradient(
+    180.3deg,
+    rgb(221, 221, 221) 40%,
+    rgb(214, 192, 228, 0.8) 60%
+  );
+  background: linear-gradient(
+    179.1deg,
+    rgb(247, 238, 238) -1.9%,
+    rgb(221, 221, 221) 44.9%,
+    rgb(214, 192, 228, 0.8) 96.1%
+  );
 }
 
 /*Navegation Section*/
@@ -19,31 +29,36 @@ nav .container-fluid {
   display: block;
   text-align: center;
   background: #fff;
-  padding-top: 166px;
-  padding-bottom: 100px;
+  padding: 83px 17px 17px;
 }
 
-.hero .container h1 {
+.hero .hero-mobile {
+  background: linear-gradient(
+    109.6deg,
+    rgb(26, 26, 29) 27.1%,
+    rgb(16, 37, 60) 51.2%,
+    rgb(111, 34, 50) 77.5%
+  );
+  padding: 100px 10px;
+}
+
+.hero .hero-mobile h1 {
   font-family: var(--primary-font-family);
   font-size: 80px;
-  color: var(--secondary-color);
-}
-
-.hero .container h2 {
-  font-family: var(--secondary-font-family);
-  font-size: 25px;
-  color: var(--secondary-color);
+  color: #fff;
   margin: 0;
 }
 
-.hero .container .woman {
-  max-width: 270px;
-  margin: 0 auto;
+.hero .hero-mobile h2 {
+  font-family: var(--secondary-font-family);
+  font-size: 25px;
+  color: #fff;
+  margin: 0;
 }
 
 /*About Section*/
 .about {
-  padding: 100px 15px;
+  padding: 70px 17px;
 }
 
 .about .container h1 {
@@ -56,9 +71,12 @@ nav .container-fluid {
   font-size: 25px;
 }
 
+.about .container p {
+  text-align: justify;
+}
+
 .about .container .about-img {
-  max-width: 270px;
-  margin: 0 auto;
+  max-width: 300px;
   border-radius: 50%;
 }
 
@@ -96,22 +114,22 @@ nav .container-fluid {
 }
 
 /*Buttons*/
-.btn-warning {
+.btn-danger {
   color: #fff;
   font-size: 15px;
-  padding: 15px 25px;
+  padding: 12px 20px;
   border-radius: 4px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 
-.btn-warning:hover {
+.btn-danger:hover {
   color: #fff;
 }
 
 .btn-dark {
   color: #fff;
   font-size: 15px;
-  padding: 15px 25px;
+  padding: 12px 20px;
   border-radius: 4px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
@@ -120,33 +138,29 @@ nav .container-fluid {
   color: #fff;
 }
 
+/*Icons*/
+.icon {
+  font-size: 40px;
+}
+
 /*Media Queries*/
 @media (max-width: 767px) {
-  .hero,
-  .about {
-    padding-top: 132px;
-    padding-bottom: 66px;
-  }
-
-  .hero .container h1,
+  .hero .hero-mobile h1,
   .about .container h1 {
     font-size: 50px;
   }
 
-  .hero .container h2,
+  .hero .hero-mobile h2,
   .about .container h2 {
     font-size: 20px;
   }
 
-  .hero .container .woman {
-    margin-top: 35px;
-  }
-
-  .about {
+  .about .container {
     text-align: center;
   }
 
   .about .container .about-img {
+    max-width: 250px;
     margin-bottom: 35px;
   }
 
