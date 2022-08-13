@@ -10,30 +10,8 @@ body {
 }
 
 /*Navegation Section*/
-nav {
-  padding: 20px 0;
-}
-
-nav ul {
-  padding: 0;
-  margin: 0;
-}
-
-nav li {
-  display: inline;
-  list-style-type: none;
-  margin-left: 10px;
-}
-
-nav a {
-  color: var(--secondary-color);
-  text-decoration: none;
-  transition: all 150ms ease-in-out;
-}
-
-nav a:hover,
-nav li.active a {
-  color: #fff;
+nav .container-fluid {
+  padding: 5px 50px;
 }
 
 /*Hero Section*/
@@ -41,7 +19,8 @@ nav li.active a {
   display: block;
   text-align: center;
   background: #fff;
-  padding: 100px 15px;
+  padding-top: 166px;
+  padding-bottom: 100px;
 }
 
 .hero .container h1 {
@@ -86,6 +65,7 @@ nav li.active a {
 /*Projects Section*/
 .projects {
   color: var(--secondary-color);
+  padding-top: 66px;
 }
 
 .projects .container h1 {
@@ -109,7 +89,7 @@ nav li.active a {
 /*Contact Section*/
 .contact {
   text-align: center;
-  padding: 50px 15px;
+  padding: 20px 15px;
 }
 .contact .contact-icon {
   font-size: 50px;
@@ -142,13 +122,10 @@ nav li.active a {
 
 /*Media Queries*/
 @media (max-width: 767px) {
-  .nav a {
-    font-size: 14px;
-  }
-
   .hero,
   .about {
-    padding: 70px 15px;
+    padding-top: 132px;
+    padding-bottom: 66px;
   }
 
   .hero .container h1,
