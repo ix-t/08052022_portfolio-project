@@ -1,7 +1,6 @@
 :root {
   --primary-font-family: "Pacifico", cursive;
   --secondary-font-family: "Work Sans", sans-serif;
-  --secondary-color: #2f2e41;
 }
 
 body {
@@ -58,7 +57,7 @@ nav .container-fluid {
 
 /*About Section*/
 .about {
-  padding: 70px 17px;
+  padding: 85px 17px;
 }
 
 .about .container h1 {
@@ -80,9 +79,14 @@ nav .container-fluid {
   border-radius: 50%;
 }
 
+.about .container .icon {
+  font-size: 40px;
+}
+
 /*Projects Section*/
 .projects {
   padding: 83px 17px 17px;
+  background: linear-gradient(to top, #dfcdea 0%, white 100%);
 }
 
 .projects .container h1 {
@@ -102,12 +106,37 @@ nav .container-fluid {
 }
 
 /*Contact Section*/
-.contact {
-  text-align: center;
-  padding: 20px 15px;
+footer {
+  background: #382438;
 }
-.contact .contact-icon {
-  font-size: 50px;
+
+footer .contact-header {
+  text-align: end;
+  margin: auto;
+}
+
+footer .contact-header h2 {
+  font-size: 20px;
+  color: #fff;
+}
+
+footer .contact-links {
+  padding: 30px 15px;
+}
+
+footer .contact-links a {
+  color: #fff;
+  background: #000;
+  font-size: 25px;
+  padding: 14px 18px;
+  margin: 0 20px;
+  border-radius: 50%;
+  transition: all 150ms ease-in-out;
+}
+
+footer .contact-links a:hover {
+  color: #382438;
+  background: #fff;
 }
 
 /*Buttons*/
@@ -125,6 +154,7 @@ nav .container-fluid {
 
 .btn-dark {
   color: #fff;
+  background: #000;
   font-size: 15px;
   padding: 12px 20px;
   border-radius: 4px;
@@ -133,18 +163,15 @@ nav .container-fluid {
 
 .btn-dark:hover {
   color: #fff;
-}
-
-/*Icons*/
-.icon {
-  font-size: 40px;
+  background: #382438;
 }
 
 /*Media Queries*/
 @media (max-width: 767px) {
   .hero .hero-mobile h1,
-  .about .container h1 {
-    font-size: 50px;
+  .about .container h1,
+  .projects .container h1 {
+    font-size: 45px;
   }
 
   .hero .hero-mobile h2,
@@ -152,7 +179,8 @@ nav .container-fluid {
     font-size: 20px;
   }
 
-  .about .container {
+  .about .container,
+  .projects .container {
     text-align: center;
   }
 
@@ -161,7 +189,28 @@ nav .container-fluid {
     margin-bottom: 35px;
   }
 
+  .about .container .icon {
+    font-size: 30px;
+  }
+
   .projects .container p {
     padding: 0 10px;
+  }
+
+  footer .contact-header {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  footer .contact-links {
+    text-align: center;
+    padding: 9px 13px;
+    margin-bottom: 15px;
+  }
+
+  footer .contact-links a {
+    font-size: 20px;
+    padding: 9px 13px;
+    margin: 0 20px;
   }
 }
